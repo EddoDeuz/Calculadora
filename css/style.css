@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+/*aspectos generales: bordes y color de fondo de calculadora*/
+.calculator {
+display: flex;
+flex-direction: column;
+width: 500px;
+font-size: 2rem;
+border: 1px solid green;
+border: 10px blue ridge;
+background-color: red;
+}
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+.calculator-display {
+width: 100%;
+text-align: right;
+overflow-x: auto;
+border: 6px black solid; 
+padding: 0px 5px;
+background-color: white;
+}
+/*botones normales: anchura y margen*/
+.calculator-keypad {
+display: flex;
+width: 100%;
+box-sizing: border-box; 
+height: 40%;
+padding: 2%;
+}
+
+.keypad-numbers {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.keypad-button {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+}
+/* Cuando se pasa el cursor se oscurece, para saber donde esta posicionado */
+.keypad-button:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.keypad-button.yellow {
+    background-color: yellow;
+}
+
+.keypad-button.large {
+    width: 50%;
+   
+}
+
+.keypad-button.dark {
+    background-color: lightgray;
+}
+.keypad-button.large.dark {
+    background-color: lightgray;
+}
