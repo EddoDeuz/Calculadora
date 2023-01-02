@@ -1,3 +1,3 @@
-#Práctica Integradora
+# Práctica Integradora
 ---
-###Realizar una calculadora
+### Realizar una calculadora
